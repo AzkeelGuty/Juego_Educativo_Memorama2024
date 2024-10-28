@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Juego Educativo Memorama</title>
+    <link rel="icon" href="./juego/imagen/icono.png">
+    <link rel="stylesheet" href="registro.css">
+  </head>
+  <body>
+    <div class="login-box">
+      <img src="./imaRegistro/pin.png" class="avatar" alt="Avatar Image">
+      <h1 class="usuario">USUARIO</h1>
+      <form onsubmit="guardarNombres(event)">
+        <label for="username1">Jugador 1</label>
+        <input type="text" id="username1" placeholder="Ingrese su nombre">
+
+        <label for="username2">Jugador 2</label>
+        <input type="text" id="username2" placeholder="Ingrese su nombre">
+        <button type="submit" class="log">Iniciar</button>
+      </form>        
+    </div>
+            <section class="ima2"  > 
+              <img src="./imaRegistro/alber2.png" width="100%" height="100%">
+            </section> 
+              <div id="audio-control">
+                  <audio id="audioPlayer" loop controls style="display: none;">
+                  <source src="./sonido/soni.mp3" type="audio/mpeg">
+                  </audio>
+                  <button id="audioToggle">
+                  <img src="./imaRegistro/volumen2.png" id="playIcon" alt="Reproducir">
+                   </button>
+               </div>
+
+    <script src="script.js"></script>
+    <script>
+      function guardarNombres(event) {
+        event.preventDefault();
+        const jugador1 = document.getElementById('username1').value;
+        const jugador2 = document.getElementById('username2').value;
+        
+        localStorage.setItem('nombreJugador1', jugador1);
+        localStorage.setItem('nombreJugador2', jugador2); 
+         window.location.href = './juego/Juego.html';
+      }
+    </script>
+  </body>
+</html>

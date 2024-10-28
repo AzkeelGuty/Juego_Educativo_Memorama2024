@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url("./juego/imagen/fondo.jpeg") ;
+             background-size: cover;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-repeat: no-repeat;
+      
+}
+
+.login-box {
+  width: 320px;
+  height: 360px;
+  color: white;
+  top: 50%;
+  left: 50%;
+  margin-left: 300px;
+  position: fixed;
+  font-family: Arial;
+  font-size: 120%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+  text-shadow: 0 0 5px  white, 0 0 25px  white, 0 0 35px  white;
+background: rgba(255, 255, 255, 0.1);
+background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 14%, rgba(255, 255, 255, 0.05) 48%, rgba(255, 255, 255, 0.1) 84%);
+}
+.usuario{
+  opacity: 90%;
+}
+.login-box:hover{
+  text-shadow: 0 0 5px  white, 0 0 15px  white, 0 0 30px  white;
+}
+
+.login-box .avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  top: -45px;
+  left: calc(300px - 50px);
+}
+
+.login-box h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.login-box label {
+  opacity: 90%;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+
+.login-box input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.login-box input[type="text"] {
+  border: none;
+  border-bottom: 1px solid white;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #000000d2;
+  font-size: 18px;
+  font-weight: bold;
+}
+img{
+    width: 50%;
+    height: auto;
+   top: 20%;
+   margin-left: -40%;
+   position: fixed;
+}
+.log{
+  opacity: 95%;
+  color: white;
+  background-color:  #515151;
+  border: 2px solid white;
+  padding: 10px 20px;
+  height: 3vw;
+  width: 10vw;
+  text-align: center;
+  font-size: 1vw;
+  border-radius: 8px;
+  margin-left: 60px;
+  font-weight: bold;
+}
+
+.log:hover {
+  background:  #1d405c;
+  color: white;
+  box-shadow: inset 0 0 5px  #1d405c, 0 0 10px  #1d405c;
+  text-shadow: 0 0 5px  #1d405c, 0 0 15px   #1d405c, 0 0 30px   #1d405c;
+  border: 2px solid white;
+  border-radius: 8px;
+
+}
+
+.login-box a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color:  #555555;
+}
+
+.login-box a:hover {
+  color: white;
+}
+#audio-control {
+    position: relative;
+}
+
+#audioToggle {
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+}
+
+#audioToggle img {
+    width: 24px;
+    margin-left: -2%;
+    top: 10px;
+}
+
+#audioPlayer::-webkit-media-controls {
+    display: none !important;
+    -webkit-appearance: none;
+}
+
+#audioPlayer {
+    display: none;
+}
